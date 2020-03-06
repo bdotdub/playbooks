@@ -1,0 +1,68 @@
+- name: Ensure trackpad speed
+  osx_defaults:
+    domain: .GlobalPreferences
+    key: com.apple.trackpad.scaling
+    type: float
+    value: 2
+    state: present
+
+- name: Finder - Show Status Bar
+  osx_defaults:
+    domain: com.apple.finder
+    key: ShowStatusBar
+    type: bool
+    value: true
+    state: present
+  notify: killall Finder
+
+- name: Finder - Default List View
+  osx_defaults:
+    domain: com.apple.Finder
+    key: FXPreferredViewStyle
+    type: string
+    value: Nlsv
+  notify: killall Finder
+
+- name: VSCode - Press and Hold for Vim extension
+  osx_defaults:
+    domain: com.facebook.fbvscode
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Hot Corner - Top Left
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-tl-corner
+    type: int
+    value: 4
+    state: present
+  notify: killall Finder
+
+- name: Hot Corner - Top Right
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-tr-corner
+    type: int
+    value: 3
+    state: present
+  notify: killall Finder
+
+- name: Hot Corner - Bottom Left
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-bl-corner
+    type: int
+    value: 2
+    state: present
+  notify: killall Finder
+
+- name: Hot Corner - Bottom Right
+  osx_defaults:
+    domain: com.apple.dock
+    key: wvous-br-corner
+    type: int
+    value: 10
+    state: present
+  notify: killall Finder

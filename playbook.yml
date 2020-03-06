@@ -1,0 +1,10 @@
+---
+- name: Ansible Playbook to setup my laptops
+  hosts: laptop
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+  roles:
+    - { role: macos }
+  tasks:
+    - debug: msg="You are the user {{ lookup('env','USER') }}"
+    - debug: msg="Your home is {{ home_dir }}"
