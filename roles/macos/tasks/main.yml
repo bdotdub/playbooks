@@ -25,6 +25,14 @@
 
 - name: VSCode - Press and Hold for Vim extension
   osx_defaults:
+    domain: com.microsoft.vscode
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: VSCode - FB - Press and Hold for Vim extension
+  osx_defaults:
     domain: com.facebook.fbvscode
     key: ApplePressAndHoldEnabled
     type: bool
