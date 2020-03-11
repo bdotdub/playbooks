@@ -655,16 +655,10 @@
 	<integer>2</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox (Facebook)/iTerm</string>
-	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<false/>
+	<string>~/Dropbox (Facebook)</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -706,20 +700,10 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1190 264 774 407 0 0 2560 1577 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 434 799 448 0 0 1680 1027 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 476 620 392 0 0 1680 1027 </string>
-	<key>NSWindow Frame SessionsPreferences</key>
-	<string>767 370 606 469 0 0 1680 1027 </string>
-	<key>NSWindow Frame SharedPreferences</key>
-	<string>233 566 928 394 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>185 73 650 497 0 0 1680 1027 </string>
+	<string>0 23 1680 1004 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1288,7 +1272,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Inconsolata 16</string>
+			<string>Menlo-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1395,37 +1379,31 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.2.9</string>
-		<string>3.3.7</string>
 		<string>3.3.9</string>
 	</array>
-	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
-	<true/>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Menlo</string>
+	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{337, 859}</string>
+		<string>{518, 823}</string>
 	</dict>
-	<key>NoSyncHaveRequestedFullDiskAccess</key>
-	<true/>
-	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
-	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>1332AFCB-F206-4439-BFC7-5E3D5CE23DAB</string>
+	<string>751AFCB8-23A6-4C5F-A17F-8B97A2FDA9EE</string>
+	<key>NoSyncLastTipTime</key>
+	<real>605632612.14557505</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>15</integer>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>598290619.00261199</real>
+	<real>605718263.412691</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
-	<false/>
+	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -1947,6 +1925,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentSession.terminalIconName</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentSession.presentationName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2132,13 +2118,12 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
-	<dict>
-		<key>Initial Directory</key>
-		<string>/Users/bennywong/Dropbox (Facebook)</string>
-	</dict>
-	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>574016971.46798599</real>
+	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
+	<real>605159374.25998294</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>2</integer>
 	<key>PointerActions</key>
@@ -2175,17 +2160,17 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/bennywong/Dropbox (Facebook)/iTerm</string>
+	<string>/Users/bennywong/.iterm</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=46</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=66</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-11T15:48:23Z</date>
+	<date>2020-03-11T17:43:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
