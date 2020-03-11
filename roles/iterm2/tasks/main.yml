@@ -1,0 +1,27 @@
+---
+- name: Create custom iTerm settings dir
+  file:
+    path: "{{ home_dir }}/.iterm"
+    state: directory
+    mode: '0755'
+
+- name: Copy iTerm settings
+  copy: src=../files/com.googlecode.iterm2.plist
+        dest={{ home_dir }}/.iterm/com.googlecode.iterm2.plist
+        mode=0640
+
+- name: Set custom dir
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: PrefsCustomFolder
+    type: string
+    value: "{{ home_dir }}/.iterm"
+    state: present
+
+- name: Load from custom dir
+  osx_defaults:
+    domain: com.googlecode.iterm2.plist
+    key: LoadPrefsFromCustomFolder
+    type: bool
+    value: true
+    state: present

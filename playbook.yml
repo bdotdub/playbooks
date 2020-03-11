@@ -18,6 +18,7 @@
     - { role: homebrew }
     - { role: zsh }
     - { role: vim }
+    - { role: iterm2 }
   tasks:
     - debug: msg="You are the user {{ lookup('env','USER') }}"
     - debug: msg="Your home is {{ home_dir }}"
