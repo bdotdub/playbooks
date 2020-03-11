@@ -3,8 +3,19 @@
   hosts: laptop
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
+    update_homebrew: false
+  pre_tasks:
+    - name: Ensuring Homebrew Is Installed
+      stat:
+        path: /usr/local/bin/brew
+      register: homebrew_check
+    - name: Installing Homebrew
+      shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      when:
+        - not homebrew_check.stat.exists
   roles:
     - { role: macos }
+    - { role: homebrew }
   tasks:
     - debug: msg="You are the user {{ lookup('env','USER') }}"
     - debug: msg="Your home is {{ home_dir }}"

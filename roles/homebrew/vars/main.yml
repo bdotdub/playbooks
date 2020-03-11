@@ -1,0 +1,16 @@
+---
+brew_cask_packages:
+  # - https://raw.githubusercontent.com/Homebrew/homebrew-cask-versions/master/Casks/1password6.rb
+  - aerial
+  - bartender
+  - dropbox
+  - istat-menus
+  - macvim
+  - notion
+  - spotify
+brew_packages:
+  - go
+  - jq
+  - wget
+install_homebrew_if_missing: false
+upgrade_homebrew_packages: false
