@@ -1,0 +1,25 @@
+---
+- name: Install vimrc repo
+  git:
+    repo: git@github.com:bdotdub/vimrc.git
+    dest: "{{ home_dir }}/Development/vimrc"
+    version: master
+    update: no
+
+- name: Create a vim autoload directory if it does not exist
+  file:
+    path: "{{ home_dir }}/.vim/autoload"
+    state: directory
+    mode: '0755'
+
+- name: Install vim-plug
+  get_url:
+    url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    dest: "{{ home_dir }}/.vim/autoload/plug.vim"
+    mode: '0644'
+
+- name: Install vimrc
+  file:
+    src: "{{ home_dir }}/Development/vimrc/vimrc"
+    dest: "{{ home_dir }}/.vimrc"
+    state: link

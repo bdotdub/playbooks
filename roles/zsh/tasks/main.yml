@@ -1,0 +1,19 @@
+---
+- name: Install zprezto repo
+  git:
+    repo: git@github.com:bdotdub/zprezto.git
+    dest: "{{ home_dir }}/.zprezto"
+    version: master
+    recursive: true
+    update: no
+
+- name: Link zsh config
+  shell: |
+    setopt EXTENDED_GLOB
+    for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+      echo "Linking ${rcfile}..."
+      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+    done
+  args:
+    executable: /bin/zsh
+    creates: "{{ home_dir }}/.zshrc"
