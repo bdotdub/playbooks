@@ -1,0 +1,5 @@
+---
+- name: Create ssh config
+  copy: src=../files/ssh_config
+        dest={{ home_dir }}/.ssh/config
+        mode=0600
