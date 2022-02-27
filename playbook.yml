@@ -19,6 +19,7 @@
     - { role: zsh }
     - { role: vim }
     - { role: iterm2 }
+    - { role: ssh }
   tasks:
     - debug: msg="You are the user {{ lookup('env','USER') }}"
     - debug: msg="Your home is {{ home_dir }}"

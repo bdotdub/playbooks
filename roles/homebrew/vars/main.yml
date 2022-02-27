@@ -1,21 +1,35 @@
 ---
 brew_cask_packages:
-  # - https://raw.githubusercontent.com/Homebrew/homebrew-cask-versions/master/Casks/1password6.rb
+  # - 1password
   - aerial
   - bartender
   - dropbox
   - istat-menus
   - logseq
   - macvim
-  - jq
+  - maestral
   - notion
   - proxyman
+  - raycast
   - rectangle
   - spotify
   - visual-studio-code
+
 brew_packages:
   - go
+  - gnupg
   - jq
+  - rust
   - wget
+
+  - git-crypt
+
+  # New unix tools via https://github.com/ibraheemdev/modern-unix
+  - diff-so-fancy
+  - dust
+  - fzf
+  - bat
+  - fx
+  - ripgrep
 install_homebrew_if_missing: false
 upgrade_homebrew_packages: false
