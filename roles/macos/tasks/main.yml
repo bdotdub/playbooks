@@ -31,14 +31,6 @@
     value: false
     state: present
 
-- name: VSCode - FB - Press and Hold for Vim extension
-  osx_defaults:
-    domain: com.facebook.fbvscode
-    key: ApplePressAndHoldEnabled
-    type: bool
-    value: false
-    state: present
-
 - name: Hot Corner - Top Left
   osx_defaults:
     domain: com.apple.dock
@@ -74,3 +66,17 @@
     value: 10
     state: present
   notify: killall Finder
+ 
+- name: Use AirDrop on every network interface
+  osx_defaults:
+    domain: com.apple.NetworkBrowser
+    key: BrowseAllInterfaces
+    type: int
+    value: 1
+ 
+- name: Avoid creating DS_Store on network volumes
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
