@@ -1,0 +1,15 @@
+---
+- Name: Install tmux.conf
+  copy: src=../files/tmux.conf
+        dest={{ home_dir }}/.tmux.conf
+        mode=0644
+
+- Name: Install gitconfig
+  copy: src=../files/gitconfig
+        dest={{ home_dir }}/.gitconfig
+        mode=0644
+
+- Name: Install gitignore
+  copy: src=../files/gitignore
+        dest={{ home_dir }}/.gitignore
+        mode=0644
