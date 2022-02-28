@@ -3,11 +3,13 @@ brew_cask_packages:
   # - 1password
   - aerial
   - bartender
+  - calibre
   - dropbox
   - istat-menus
   - logseq
   - macvim
   - maestral
+  - monitorcontrol
   - notion
   - proxyman
   - raycast
@@ -23,6 +25,7 @@ brew_packages:
   - wget
 
   - git-crypt
+  - tailscale
 
   # New unix tools via https://github.com/ibraheemdev/modern-unix
   - diff-so-fancy
